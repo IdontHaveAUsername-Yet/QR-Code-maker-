@@ -1,9 +1,9 @@
 import qrcode
 
-data = input("Was soll im QR-Code stehen? ")
+data = input("What should be contents of the qr code?")
 
 qr = qrcode.QRCode()
 qr.add_data(data)
 qr.make()
 
-qr.print_ascii()  # QR-Code wird im Terminal als ASCII ausgegeben
+qr.print_ascii()  
